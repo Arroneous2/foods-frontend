@@ -10,6 +10,7 @@ export function FoodsIndex(props) {
             <p>{food.ethnicity}</p>
             <p>{food.time} minutes</p>
             <img src={food.image_url} alt="" />
+            <button onClick={() => props.onShowFood(food)}>More info</button>
           </div>
         ))}
       </div>
